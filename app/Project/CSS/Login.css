@@ -1,4 +1,14 @@
-body{
-    background: antiquewhite;
+html,body{
+    background: linear-gradient(#CC99FF,#99CCFF);
     height: 100%;
+    overflow: auto;
+}
+
+.gridForm{
+    display: grid;
+    margin: 10% 20%;
+}
+
+.content{
+
 }
