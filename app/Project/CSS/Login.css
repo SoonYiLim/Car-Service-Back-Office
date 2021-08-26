@@ -4,10 +4,18 @@ html,body{
     overflow: auto;
 }
 
-.gridForm{
-    display: grid;
+.sBackground{
     margin: 1% 1%;
     background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px 2%;
+    height: 90%;
+}
+
+.gridForm{
+    display: grid;
+    margin: 0 1%;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 20px;
     padding: 10px 2%;
     grid-gap: 30px;
@@ -22,7 +30,7 @@ html,body{
     border: 5px rgba(0, 0, 0, 0.5) solid;
     margin-top: 20px !important;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -50,37 +58,112 @@ html,body{
     margin-top: 10px !important;
 }
 
+.divLogin{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+.lblLogin{
+    text-align: center;
+    font-family: Quicksand, Verdana, cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #2d3748;
+}
+
 .lblEmpID{
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: end;
+    margin-right: 20px;
+    font-family: Quicksand, Verdana, cursive;
+    align-self: center;
+    font-weight: bolder;
+    color: #2d3748;
+    font-size: 18px;
 }
 
 .txtEmpID {
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.EmpID{
+    width: 95%;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .lblPassword{
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: end;
+    margin-right: 20px;
+    font-family: Quicksand, Verdana, cursive;
+    align-self: center;
+    font-weight: bolder;
+    color: #2d3748;
+    font-size: 18px;
 }
 
 .txtPassword{
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.divButton{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
 }
+
+.password{
+    width: 95%;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.divButton{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-self: end;
+    margin-right: 80px;
+}
+
+.btnLogin {
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    background-color:#7892c2;
+    border-radius:10px;
+    border:1px solid #4e6096;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: Quicksand, Verdana, cursive;
+    font-size:18px;
+    padding:10px 22px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+}
+.btnLogin:hover {
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    background-color:#476e9e;
+}
+.btnLogin:active {
+    position:relative;
+    top:1px;
+}
+

@@ -7,9 +7,10 @@
     <!-- Connect CSS -->
     <link rel="stylesheet" href="../CSS/Login.css" type="text/css">
 
-    <title>KIA CSMS</title>
+    <title>KIA CSMS Login Page</title>
 </head>
 <body>
+<div class="sBackground">
     <form class="gridForm">
         <div class="title">
             <div class="img">
@@ -21,6 +22,12 @@
             </h5>
         </div>
 
+        <div class="divLogin">
+            <label class="lblLogin">
+                Login
+            </label>
+        </div>
+
         <div class="lblEmpID">
             <label>
                 Employee ID
@@ -29,7 +36,7 @@
 
         <div class="txtEmpID">
             <label>
-                <input type="text" placeholder="Employee ID" name="username">
+                <input type="text" placeholder="Employee ID" name="EmpID" class="EmpID">
             </label>
         </div>
 
@@ -41,14 +48,15 @@
 
         <div class="txtPassword">
             <label>
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="password" class=password placeholder="Password">
             </label>
         </div>
 
         <div class="divButton">
-            <button type="submit">Login</button>
+            <button type="submit" class="btnLogin" name="btnLogin">Login</button>
         </div>
 
     </form>
+</div>
 </body>
 </html>
