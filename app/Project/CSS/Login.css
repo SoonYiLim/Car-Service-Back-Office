@@ -10,6 +10,7 @@ html,body{
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     padding: 10px 2%;
+    grid-gap: 30px;
 }
 
 .title{
@@ -17,10 +18,13 @@ html,body{
     font-size: 30px;
     color: #2d3748;
     font-family: Quicksand, Verdana, cursive;
-    margin-bottom: 20px !important;
-    margin-top: 10px !important;
     background-color: rgba(255, 255, 255, 0);
     border: 5px rgba(0, 0, 0, 0.5) solid;
+    margin-top: 20px !important;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .img{
@@ -44,4 +48,39 @@ html,body{
     font-family: Quicksand, Verdana, cursive;
     margin-bottom: 10px !important;
     margin-top: 10px !important;
+}
+
+.lblEmpID{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.txtEmpID {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.lblPassword{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.txtPassword{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.divButton{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
