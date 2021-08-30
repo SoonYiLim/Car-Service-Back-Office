@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Connect CSS -->
     <link rel="stylesheet" href="../CSS/Login.css" type="text/css">
-
+    <script src="../jquery/jquery.min.js">
+    </script>
     <title>KIA CSMS Login Page</title>
 </head>
 <body>
 <div class="sBackground">
-    <form class="gridForm" action="../Back-End/Login.php">
+    <form class="gridForm" action="../Back-End/Login.php"> <!--Linking the form-->
         <div class="title">
             <div class="img">
                 <img src="../img/logo.png" alt="KIA Logo" class="imgLogo">
@@ -53,7 +54,7 @@
         </div>
 
         <div class="divButton">
-            <button type="submit" class="btnLogin" name="btnLogin">Login</button>
+            <button type="submit" class="btnLogin" name="btnLogin" value="btnLogin" onclick="">Login</button>
         </div>
 
     </form>
